@@ -12,7 +12,8 @@ const Countdown = (props) => {
     setIsActive(true)
     setIsPaused(true)
     increment.current = setInterval(() => {
-      setTimer((timer) => timer - 1)
+      setTimer((timer) => timer > 0 ? 
+      timer - 1 : timer)
     }, 1000)
   }
 
@@ -24,7 +25,8 @@ const Countdown = (props) => {
   const handleResume = () => {
     setIsPaused(true)
     increment.current = setInterval(() => {
-      setTimer((timer) => timer - 1)
+      setTimer((timer) => timer > 0 ?
+      timer - 1 : timer)
     }, 1000)
   }
 

@@ -4,7 +4,7 @@ import Countdown from './components/Timer'
 function App() {
   return (
     <div>
-      <Countdown customStart="90" />
+      <Countdown customStart = "10" />
     </div>
   );
 }

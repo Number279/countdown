@@ -3,12 +3,12 @@
 body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
-  background-color: #eceff1;
-  color: #010b40;
+  background-color: #776464;
+  color: #000000;
 }
 
 .app {
-  background-color: #0e4d92;
+  background-color: #050505;
   margin: 0 auto;
   width: 300px;
   height: 200px;
@@ -17,7 +17,7 @@ body {
 }
 
 h3 {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding-top: 8px;
   letter-spacing: 1.2px;
@@ -31,8 +31,8 @@ p {
 .stopwatch-card {
   position: absolute;
   text-align: center;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.616);
   width: 325px;
   height: 130px;
   top: 110px;
@@ -46,8 +46,9 @@ button {
   border: 1px solid blue;
   padding: 5px 10px;
   border-radius: 7px;
-  color: blue;
+  color: rgb(20, 4, 251);
   cursor: pointer;
+  background-color: rgb(255, 255, 255);
 }
 
 .buttons {
