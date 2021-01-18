@@ -1,10 +1,10 @@
 import './App.css';
-import Countdown from './components/Timer'
+import Layout from './components/layout/Layout'
 
 function App() {
-  return (
-    <div>
-      <Countdown customStart = "10" />
+  return(
+  <div>
+    <Layout />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "./style.css";
 
 // const element = <FontAwesomeIcon icon={faClock} />
-const Countdown = (props) => {
+const Timer = (props) => {
   const [timer, setTimer] = useState(props.customStart)
   const [isActive, setIsActive] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
@@ -60,11 +60,17 @@ const Countdown = (props) => {
                   <button onClick={handleResume}>Resume</button>
               )
           }
-          <button onClick={handleReset} disabled={!isActive}>Reset</button>
+          {
+            !isActive && !isPaused ?
+          <button onClick={handleReset}>Set Timer</button>
+          : (
+            <button onClick={handleReset} disabled={!isActive}>Reset</button>
+          )
+          }
         </div>
       </div>
     </div>
   );
 }
 
-export default Countdown;
+export default Timer;
